@@ -1,26 +1,19 @@
+" 不做拼写检查
 set nospell
+
+" 相对行数
 set relativenumber
-" yy到剪切板
+
+" yank到剪切板
 set clipboard=unnamed
+
 " NERDTree 在右侧
-let g:NERDTreeWinPos = "right"
-" 自动打开 NERDTree
-" autocmd VimEnter * NERDTree
-" 在 NERDTree 中回车打开文件在新的标签页
-" let NERDTreeMapOpenInTab='<ENTER>'
-" ctrlp 直接在标签中打开文件
-" let g:ctrlp_prompt_mappings = {
-"     \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
-"     \ 'AcceptSelection("t")': ['<cr>'],
-"     \ }
+" let g:NERDTreeWinPos = "right"
+
+" 自动打开 NERDTree, 并且将光标切换至文件上
+autocmd VimEnter * NERDTree | wincmd p
+
 " 插入模式下光标转换
-let &t_SI = "\e[6 q"
-let &t_EI = "\e[2 q"
-" let g:ale_python_flake8_auto_pipenv = 1
-let g:ale_python_auto_pipenv = 1
-" Check Python files with flake8.
-let b:ale_linters = ['flake8']
-" Fix Python files with isort and yapf.
-let b:ale_fixers = ['yapf', 'isort', 'prettier']
-" ignore line too long in flake8
-let g:ale_python_flake8_options = "--ignore=E501"
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
