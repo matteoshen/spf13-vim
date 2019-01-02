@@ -156,7 +156,7 @@
             Bundle 'tpope/vim-fugitive'
             Bundle 'Xuyuanp/nerdtree-git-plugin'
             Bundle 'mattn/webapi-vim'
-            " Bundle 'mattn/gist-vim'
+            Bundle 'mattn/gist-vim'
             Bundle 'scrooloose/nerdcommenter'
             Bundle 'tpope/vim-commentary'
             Bundle 'godlygeek/tabular'
