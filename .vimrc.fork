@@ -11,9 +11,21 @@ set clipboard=unnamed
 " let g:NERDTreeWinPos = "right"
 
 " 自动打开 NERDTree, 并且将光标切换至文件上
-autocmd VimEnter * NERDTree | wincmd p
+" autocmd VimEnter * NERDTree | wincmd p
 
 " 插入模式下光标转换
 let &t_SI.="\e[5 q"
 let &t_SR.="\e[4 q"
 let &t_EI.="\e[1 q"
+
+" 将buffer变化到tab
+map ,bt :bufdo tab split<CR>
+
+" 持续复制
+xnoremap p pgvy
+
+" ctrlp在新的标签页中打开
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+    \ 'AcceptSelection("t")': ['<cr>'],
+    \ }

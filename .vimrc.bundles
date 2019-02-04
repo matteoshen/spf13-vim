@@ -152,7 +152,7 @@
     " General Programming {
         if count(g:spf13_bundle_groups, 'programming')
             " Pick one of the checksyntax, jslint, or syntastic
-            Bundle 'matteoshen/ale'
+            Bundle 'w0rp/ale'
             Bundle 'tpope/vim-fugitive'
             Bundle 'Xuyuanp/nerdtree-git-plugin'
             Bundle 'mattn/webapi-vim'
@@ -203,11 +203,8 @@
     " Python {
         if count(g:spf13_bundle_groups, 'python')
             " Pick either python-mode or pyflakes & pydoc
-            Bundle 'matteoshen/python-mode'
-            Bundle 'ivanov/vim-ipython'
-            " Bundle 'yssource/python.vim'
-            " Bundle 'python_match.vim'
-            " Bundle 'pythoncomplete'
+            Bundle 'python-mode/python-mode'
+            Bundle 'matteoshen/vim-ipython'
         endif
     " }
 
