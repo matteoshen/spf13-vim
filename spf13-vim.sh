@@ -204,5 +204,5 @@ sync_repo       "$HOME/.vim/bundle/vundle" \
 # setup_vundle    "$APP_PATH/.vimrc.bundles.default"
 
 msg             "\nThanks for installing $app_name."
-msg             "\nPlease install plugins manually with command in vim: \'PluginInstall\''"
+msg             "\nPlease install plugins manually with command in vim\: PluginInstall'"
 msg             "© `date +%Y` http://vim.spf13.com/"
