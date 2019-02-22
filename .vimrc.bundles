@@ -121,7 +121,7 @@
                 Bundle 'vim-airline/vim-airline'
                 Bundle 'vim-airline/vim-airline-themes'
             endif
-            Bundle 'powerline/fonts'
+            Bundle 'matteoshen/fonts'
             Bundle 'bling/vim-bufferline'
             Bundle 'easymotion/vim-easymotion'
             Bundle 'jistr/vim-nerdtree-tabs'
