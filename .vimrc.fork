@@ -14,8 +14,3 @@ let &t_EI.="\e[1 q"
 
 " 持续复制
 xnoremap p pgvy
-
-" pymode rope activate
-let g:pymode_rope = 1
-let g:pymode_rope_completion = 0
-let g:pymode_doc = 0

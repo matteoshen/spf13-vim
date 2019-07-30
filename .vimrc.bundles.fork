@@ -1,4 +1,2 @@
-Bundle "vim-scripts/Tabmerge"
 Bundle 'chrisbra/csv.vim'
 Bundle 'mtth/scratch.vim'
-Bundle 'tpope/vim-markdown'
